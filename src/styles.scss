@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~codemirror/lib/codemirror';
+// @import '~codemirror/theme/material';
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.CodeMirror {
+    height: 100%;
+}

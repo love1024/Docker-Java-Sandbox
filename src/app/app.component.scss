@@ -1,0 +1,74 @@
+.root {
+    background-color: #efefef;
+    height: 100vh;
+}
+
+.header {
+    height: 30px;
+    font-size: 28px;
+    color: rgb(141, 210, 233);
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding: 8px 16px;
+}
+
+.content {
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+
+    .code {
+        flex: 1;
+        background-color: white;
+        height: 100%;
+    }
+
+    .menu {
+        flex: 1;
+        padding: 8px;
+
+        .actions {
+            button {
+                color: rgb(21, 119, 151);
+                background-color: transparent;
+                padding: 8px 16px;
+                border: 2px solid rgb(206, 200, 200);
+                border-radius: 4px;
+                font-size: 16px;
+                font-weight: bold;
+                box-shadow: 2px 2px 2px lightgray;
+                cursor: pointer;
+
+                &:active {
+                    box-shadow: 0;
+                    transform: translateY(1px);
+                }
+                
+                &:disabled {
+                    box-shadow: none;
+                    cursor: not-allowed;
+                }
+            }
+
+            .logs {
+                display: flex; 
+                align-items: center;
+
+                p {
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        .output .result{
+            width: 100%;
+            .error {
+                background-color: white;
+                color: red;
+            }
+            .success {
+                background-color: white;
+            }
+        }
+    }
+}
